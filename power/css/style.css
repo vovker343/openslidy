@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"); /* google icons */
+@import url("remixicon.css"); /* remix icons */
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap"); /* font family "Commissioner" */
+@import url("header.css?v=1.0.152");
+@import url("menu.css?v=1.0.149");
+@import url("scrollbar.css?v=1.0.103");
+@import url("table.css?v=1.0.126");
+
+* {
+  font-family: monospace;
+  font-size: 11px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-spacing: 0;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --header_height: 60px;
+  --header_clr: 0, 0%, 8%;
+}
+::selection {
+  background: #2555be;
+  color: white;
+}
+
+body {
+  background-color: hsl(0, 0%, 8%);
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.emoji {
+    margin: 0 2px -2px;
+    max-height: 15px;
+    max-width: 13px;
+    border-radius: 2px;
+}
+
+.emoji, .admin-icon-link {
+  filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.8));
+}

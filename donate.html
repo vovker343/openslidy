@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/egg.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Slidysim Donation</title>
+    <style>
+        body {
+            background-color: black;
+            color: #ffffffe6;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            user-select: none;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #1e1e1eb7;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #00ffff;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .back-link {
+            font-size: 0.9em;
+            color: #00ffff;
+            text-decoration: none;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        p {
+            font-size: 1em;
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .team-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            background: #2b2b2b;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 255, 255, 0.1);
+        }
+
+        .team-member img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .team-member strong {
+            font-size: 1.1em;
+            color: #00ffff;
+        }
+
+        .team-member p {
+            margin: 5px 0 0 0;
+        }
+
+        .donation-options {
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+
+        .donation-options a {
+            color: #00ffff;
+            text-decoration: none;
+        }
+
+        .donation-options a:hover {
+            text-decoration: underline;
+        }
+
+        .donators-list {
+            margin-top: 20px;
+            padding: 0;
+            list-style-type: none;
+            background: #2b2b2b;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 255, 255, 0.1);
+        }
+
+        .donator-entry {
+            padding: 10px;
+            border-bottom: 1px solid #333;
+        }
+
+        .donator-entry:last-child {
+            border-bottom: none;
+        }
+
+        .donator-name {
+            font-weight: bold;
+            color: #00ffff;
+        }
+
+        .donator-comment {
+            font-style: italic;
+            color: #a0a0a0;
+        }
+
+        .donator-amount {
+            font-weight: bold;
+            color: #4db6ac;
+        }
+        a{
+            font-size: 18px;
+            text-shadow: 0px 0px 10px cyan;
+        }
+        .goal-container {
+            margin: 10px 0;
+            background-color: rgb(0, 110, 110);
+            
+            border-radius: 10px;
+            width: 100%;
+            max-width: 100%px;
+        }
+
+        .goal-bar {
+            background-color: cyan;
+            color: black;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 14px;
+            transition: width 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Support Open Slidysim</h1>
+        <a href="/" class="back-link">Go back to the main page</a>
+        <p>Thank you for considering a donation to Open Slidysim!</p>
+        <p>
+            Open Slidysim is a passion project, dedicated to providing an ad-free experience and keeping the speedsliding leaderboard open to all.
+        </p>
+        <p>
+            Hosting costs start at just $15 per year, so every contribution makes a difference. We appreciate your support!
+        </p>
+        <p>
+            If you want to be mentioned here as non-anonymous, please include your slidysim username with the message (OR another nickname you want to use).
+        </p>
+        
+        <h2>Our Team</h2>
+        <ul class="team-list">
+            <li class="team-member">
+                <img src="images/team/dphdmn.png" alt="dphdmn">
+                <div>
+                    <strong>dphdmn</strong><br>(former) #1 Slidysim player<br>Frontend developer<br>Creator of this website and the PB upload manager.
+                    <p class="donation-options">
+                        Donation options:
+                        <br>
+                        <a href="https://boosty.to/dphdmn/donate" target="_blank">Boosty - send cash in any currency</a>
+                        <br>
+                        <a style="font-size: 12px; color: magenta; text-shadow: 0px 0px 10px magenta;" href="https://steamcommunity.com/tradeoffer/new/?partner=99151588&token=kKNvThDz" target="_blank">
+                            (Alternatively) Send Steam items (TF2 / CS2 / EGGs) with a trade offer (if you know you know)
+                        </a>
+                    </p>
+                </div>
+            </li>
+            <li class="team-member">
+                <img src="images/team/vovker.png" alt="vovker">
+                <div>
+                    <strong>vovker</strong><br>#1 Slidysim player<br>Backend developer<br>Creator of the PB server.
+                    <p class="donation-options">Donation options: <br>
+                        <a href="https://boosty.to/yaytso/donate" target="_blank">Boosty - send cash in any currency</a>
+                        <br>
+                        <a style="font-size: 12px; color: magenta; text-shadow: 0px 0px 10px magenta;" href="https://steamcommunity.com/tradeoffer/new/?partner=1841740653&token=C14gwXi5" target="_blank">
+                            (Alternatively) Send Steam items (TF2 / CS2 / EGGs) with a trade offer (if you know you know)
+                        </a>
+                </div>
+            </li>
+        </ul>
+        <p>
+            All donations will be acknowledged on this page. While we can't offer any tangible rewards for your contributions, you have our deepest gratitude.
+        </p>
+        <h2>Donators</h2>
+        <p>2025.10.12: Special thanks to Moka雨晞 for donating about <span style="color:rgb(0, 255, 0)">200$</span>, keeping this site alive for next 7 billion years!</p>
+        <p>2024.10.29: Thanks a lot everyone! We already receieved <span style="color:rgb(0, 255, 0)">50$</span> in total from you all, thanks for your support. That is more than enough to keep hosting website for next couple years without any issues.</p>
+        <p>All Donators recieved a special <span style="color:gold">Golden Egg</span> Icon on the leaderboard page!</p>
+        <p>Feel free to contact us in discord if you have any suggestions for donator's rewards or website in general. (There are some plans for cool future updates already!)</p>
+        <p>(note, 100 ₽ ~ 1 $, values shown in converted currency)</p>
+        <div class="goal-container">
+            <div class="goal-bar" id="goalBar">0 / 50,000 ₽</div>
+        </div>
+    
+        <ul class="donators-list" id="donatorsList"></ul>
+
+        <script>
+            // Donators data
+            const donators = [
+                { name: "SkyStep", amount: 468, recipient: "vovker", date: "2024.10.26", comment: "Egg" },
+                { name: "qqwref", amount: 1873, recipient: "vovker", date: "2024.10.26", comment: "hosting" },
+                { name: "c0wmanglr", amount: 1428, recipient: "dphdmn", date: "2024.10.26", comment: "donation to slidy leaderboard" },
+                { name: "goodevening", amount: 100, recipient: "dphdmn", date: "2024.10.27", comment: "не забывай кушать яйца пашот" },
+                { name: "XLII", amount: 468, recipient: "vovker", date: "2024.10.28", comment: "Idk what to put here 🍳 (I couldn't find normal egg emoji on my phone lol)" },
+                { name: "XLII", amount: 468, recipient: "dphdmn", date: "2024.10.28", comment: "Pls return to speedsliding server" },
+                { name: "VaniLalatina", amount: 149, recipient: "dphdmn", date: "2024.10.29", comment: "Яйица" },
+                { name: "Blueoanaoa", amount: 150, recipient: "dphdmn", date: "2025.07.08", comment: "554不行554不行554不行554不行554不行554不行554不行554不行554不行554不行" },
+                { name: "OCEshadow", amount: 1159, recipient: "dphdmn", date: "2025.07.29", comment: "Here you go dph! Hope this helps eggag :)" },
+                { name: "iota", amount: 388, recipient: "dphdmn", date: "2025.09.02", comment: "manhattan is best display type" },
+                { name: "iota", amount: 388, recipient: "vovker", date: "2025.09.02", comment: "haha imagine counting silly goose, shouldve been playing manhattan" },
+                { name: "OCEshadow", amount: 395, recipient: "vovker", date: "2025.09.08", comment: "Eggag vovker I guess you beat one part of my challenge but you will never find the other alt :smiling_imp: GG on new WRs and keep improving my man! :D" },
+                { name: "qqwref", amount: 962, recipient: "vovker", date: "2025.09.09", comment: "tisyacha roobly" },
+                { name: "c0wmanglr", amount: 1600, recipient: "dphdmn", date: "2025.09.10", comment: "[no comment]" },
+                { name: "Moka雨晞", amount: 15000, recipient: "dphdmn", date: "2025.10.12", comment: "It scary woman hours fr"},
+                { name: "xsedim", amount: 387, recipient: "vovker", date: "2025.10.17", comment: "yaytso real puzz eggwin"},
+                { name: "OCEshadow", amount: 1018, recipient: "vovker", date: "2025.10.19", comment: "https://youtu.be/GrhGUZloSiU Peak autism vovker maybe will give more challenges :D" },
+
+            ];
+    
+            const goalAmount = 50000; // Goal in rubles
+            let totalAmount = 0;
+    
+            const donatorsList = document.getElementById("donatorsList");
+            const goalBar = document.getElementById("goalBar");
+    
+            // Function to format numbers with commas
+            function formatNumber(num) {
+                return num.toLocaleString("ru");
+            }
+    
+            // Populate the donators list and update the goal progress
+            donators.forEach(donator => {
+                totalAmount += donator.amount;
+    
+                // Create list item
+                const listItem = document.createElement("li");
+                listItem.className = "donator-entry";
+    
+                listItem.innerHTML = `
+                    <span class="donator-name">${donator.name}</span> - 
+                    <span class="donator-amount">${formatNumber(donator.amount)} ₽</span>
+                    <span class="donator-comment">[to ${donator.recipient}] [${donator.date}] Comment: ${donator.comment}</span>
+                `;
+    
+                donatorsList.appendChild(listItem);
+            });
+    
+            // Update goal progress bar
+            const progress = Math.min((totalAmount / goalAmount) * 100, 100);
+            goalBar.style.width = `${progress}%`;
+            goalBar.textContent = `${formatNumber(totalAmount)} / ${formatNumber(goalAmount)} ₽`;
+        </script>
+
+    <script src="scripts/matrx.js"></script>
+</body>
+</html>
